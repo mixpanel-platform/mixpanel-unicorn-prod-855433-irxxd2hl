@@ -50,9 +50,7 @@
             from: moment().subtract(3, 'months'),
             to: moment().subtract(2, 'months'),
             limit: 1,                             // maximum number of results to return
-            length: 14,                             // number of days each user has to complete the funnel
-            // the following are undefined by default
-            where: 'properties["age"] == 21',       // an expression to filter by.
+            length: 0,                             // number of days each user has to complete the funnel
             segment: '$browser'                     // a segmentation expression or event property.
         };
         
